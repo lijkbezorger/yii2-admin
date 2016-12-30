@@ -13,6 +13,8 @@ use yii\base\Widget;
  */
 class Menu extends Widget
 {
+    public $isCollapsed;
+
     protected $items = [];
 
     public function init()
@@ -41,6 +43,7 @@ class Menu extends Widget
         return MetisMenu::widget([
             'items' => $this->items,
             'submenuTemplate' => "\n<ul class='nav submenu'>\n{items}\n</ul>\n",
+            'isCollapsed' => $this->isCollapsed
         ]);
     }
 

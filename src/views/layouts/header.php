@@ -244,11 +244,5 @@ use yii\helpers\Url;
     </ul>
     <!-- /.navbar-top-links -->
 
-    <div class="navbar-default sidebar" role="navigation">
-        <div class="sidebar-nav navbar-collapse">
-            <?= Menu::widget() ?>
-        </div>
-        <!-- /.sidebar-collapse -->
-    </div>
-    <!-- /.navbar-static-side -->
+    <?= Menu::widget() ?>
 </nav>
